@@ -23,8 +23,8 @@ jobs:
         node-version: '20.x'
 
     - name: 安装 Hexo
-        run: |
-          npm install hexo-cli -g
+      run: |
+        npm install hexo-cli -g
 
     - name: 缓存 Hexo
       id: cache-npm
