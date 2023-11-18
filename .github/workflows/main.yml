@@ -42,17 +42,12 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
 
-    - name: 安装依赖
-      if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-      run: |
-        npm install gulp-cli -g #全局安装gulp
-        npm install --save
+
 
     - name: 生成静态文件
       run: |
         hexo clean
         hexo generate
-        gulp
 
     - name: Deploy to Github Pages
       env:
