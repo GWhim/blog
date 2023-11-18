@@ -17,27 +17,50 @@ jobs:
       with:
         submodules: true
 
-    - name: Cache node modules
-      uses: actions/cache@v1
-      id: cache
+    - name: 安装 Node
+      uses: actions/setup-node@v1
       with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
+        node-version: '20.x'
 
-   # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.3
-      with:
-        deploy_key: ${{ secrets.HEXO_DEPLOY_PRI }}
-        user_name: ggg-hhh  # (or delete this input setting to use bot account)
-        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
-      run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+    - name: 安装 Hexo
+        run: 
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+
+      - name: 缓存 Hexo
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: 安装依赖
+        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        run: 
+          npm install gulp-cli -g #全局安装gulp
+          npm install --save
+
+      - name: 生成静态文件
+        run: 
+          hexo clean
+          hexo generate
+          gulp
+
+    - name: Deploy to Github Pages
+      env:
+        GIT_NAME: ggg-hhh
+        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+        REPO: github.com/ggg-hhh/ggg-hhh.github.io
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: 
+        cd ./public && git init && git add .
+        git config --global user.name $GIT_NAME
+        git config --global user.email $GIT_EMAIL
+        git commit -m "Site deployed by GitHub Actions"
+        git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
