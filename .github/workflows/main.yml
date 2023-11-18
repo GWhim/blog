@@ -11,10 +11,10 @@ jobs:
     env:
       TZ: Asia/Shanghai
     steps:
-    - name: Checkout source
+    - name: 检查分支
       uses: actions/checkout@v2
       with:
-        submodules: true
+        ref: master
 
     - name: 安装 Node
       uses: actions/setup-node@v1
