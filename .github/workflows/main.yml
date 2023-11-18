@@ -42,8 +42,6 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
 
-
-
     - name: 生成静态文件
       run: |
         hexo clean
@@ -56,5 +54,3 @@ jobs:
         branch: hexo
         folder: public
         commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"hub.event.head_commit.message }} Updated By Github Actions"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
