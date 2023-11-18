@@ -49,15 +49,11 @@ jobs:
         hexo clean
         hexo generate
 
-    - name: Deploy to Github Pages
-      env:
-        GIT_NAME: ggg-hhh
-        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-        REPO: github.com/ggg-hhh/ggg-hhh.github.io
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        cd ./public && git init && git add .
-        git config --global user.name $GIT_NAME
-        git config --global user.email $GIT_EMAIL
-        git commit -m "Site deployed by GitHub Actions"
-        git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
+    - name: 部署到Github
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        token: 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
+        repository-name: ggg-hhh/ggg-hhh.github.io
+        branch: hexo
+        folder: public
+        commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
