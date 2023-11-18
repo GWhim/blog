@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://ggghhh.org.edu.kg
 permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
@@ -105,7 +105,8 @@ exclude:
 ignore:
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
+Plugins: 
+- hexo-generator-cname
 ## Themes: https://hexo.io/themes/
 theme: LiveForCode
 
