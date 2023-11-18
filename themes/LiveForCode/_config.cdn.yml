@@ -7,7 +7,7 @@ GitHubRepositories: "Hexo-LiveForCode"
 
 # ---- 基础信息配置 ----
 # 博主名称, 文章后缀和主页图片上都会使用此名称
-User: "Live For Code"
+User: "Live For Freedom"
 # 用户头像URL
 UserAvatar: "https://cdn.jsdelivr.net/gh/first19326/cdn@master/static/image/sidebar/avatar.jpg"
 # 创建时间
@@ -18,7 +18,7 @@ Home: "https://worstone.cn"
 
 # ---- 网站配置 ----
 # 当前页失去焦点, 页面Title显示文字
-WebsiteTitleBlur: "(◍´꒳`◍) Hi, Live For Code"
+WebsiteTitleBlur: "(◍´꒳`◍) Hi, Live For Freedom"
 # 当前页失去焦点, 页面Title变化, 延时时间, 单位毫秒
 WebsiteTitleBlurTimeOut: 500
 # 当前页获取焦点, 页面Title显示文字, 显示后延时恢复原Title
@@ -459,4 +459,4 @@ Suffix:
 # ---- 主题信息配置 ----
 Theme: 
   url: "https://github.com/first19326/Hexo-LiveForCode"
-  name: "Hexo - Live For Code"
+  name: "Hexo - Live For Freedom"

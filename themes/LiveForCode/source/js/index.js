@@ -6,7 +6,7 @@
         UserAvatar: '/image/sidebar/avatar.jpg',
         WebsiteStartDate: '2020-01-01',
         Home: 'javascript:;',
-        WebsiteTitleBlur: '(◍´꒳`◍) Hi, Live For Code',
+        WebsiteTitleBlur: '(◍´꒳`◍) Hi, Live For Freedom',
         WebsiteTitleBlurTimeOut: 500,
         WebsiteTitleFocus: '(*´∇｀*) 欢迎回来!',
         WebsiteTitleFocusTimeOut: 1000,
@@ -103,7 +103,7 @@
         ],
         MenuLink : [],
         FooterStyle: 2,
-        BottomText: '<div><span class="face">ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class="iconfont icon-like-fill"></i></span>何事秋风悲画扇】</div><div>Live For Code</div>',
+        BottomText: '<div><span class="face">ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class="iconfont icon-like-fill"></i></span>何事秋风悲画扇】</div><div>Live For Freedom</div>',
         ConsoleList: [],
         FontIconExtend: '',
         Donate: {
@@ -257,7 +257,7 @@
         },
         Theme: {
             url: 'https://github.com/first19326/Hexo-LiveForCode',
-            name: 'Hexo - Live For Code'
+            name: 'Hexo - Live For Freedom'
         }
     };
 

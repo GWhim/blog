@@ -39,7 +39,7 @@ friends  :
         name    : WorstOne
         avatar  : /image/sidebar/avatar.jpg
         url     : https://notes.worstone.cn
-        about   : Live For Code 作者
+        about   : Live For Freedom 作者
 ---
 > 欢迎各位朋友前来交换友链，本站友链接受以下类型的网站：
 > - 个人博客
