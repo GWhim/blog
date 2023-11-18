@@ -54,6 +54,6 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository-name: ggg-hhh/blog
-        branch: hexo
+        branch: main
         folder: public
-        commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"hub.event.head_commit.message }} Updated By Github Actions"
+        commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
