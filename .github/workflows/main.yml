@@ -24,7 +24,7 @@ jobs:
 
     - name: 安装 Hexo
         run: |
-          npm install hexo-cli -g
+          npm i -g hexo-cli
 
       - name: 缓存 Hexo
         id: cache-npm
