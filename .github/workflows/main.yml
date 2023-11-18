@@ -52,8 +52,8 @@ jobs:
     - name: 部署到Github
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        token: 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
-        repository-name: ggg-hhh/blog.git
+        token: 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
+        repository-name: ggg-hhh/blog
         branch: hexo
         folder: public
         commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
