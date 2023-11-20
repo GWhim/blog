@@ -29,23 +29,11 @@ jobs:
         hexo clean
         hexo g
 
-    - name: 缓存 Hexo
-      id: cache-npm
-      uses: actions/cache@v3
-      env:
-        cache-name: cache-node-modules
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
     - name: 生成静态文件
       run: |
         hexo clean
         hexo generate
+        hexo algolia --flush true --layouts post
 
     - name: 部署到Github
       uses: JamesIves/github-pages-deploy-action@v4
@@ -54,6 +42,6 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         repository-name: ggg-hhh/blog
-        branch: hexo
+        branch: master
         folder: public
         commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
