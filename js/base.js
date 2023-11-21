@@ -589,6 +589,10 @@ function Base() {
             'background': '#222 url(' + backImage + ')  center center no-repeat',
             'background-size': 'cover'
         });
+        $('#header').click(function () {
+            let endScroll = $('#container').offset().top; 
+            $('body').velocity('scroll', { offset: endScroll, mobileHA: false });
+        });
 
         // 头图点击滚动到内容位置
         $('.scroll-down').click(function () {
