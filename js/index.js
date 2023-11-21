@@ -103,7 +103,7 @@
         ],
         MenuLink : [],
         FooterStyle: 2,
-        BottomText: '<div><span class="face">ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class="iconfont icon-like-fill"></i></span>何事秋风悲画扇】</div><div>Live For Freedom</div>',
+        BottomText: '<div><span class="face">ღゝ◡╹)ノ♡</span></div><div>【无论我身处何方<span><i class="iconfont icon-like-fill"></i></span>请永持奇思异想】</div><div>Live For Freedom</div>',
         ConsoleList: [],
         FontIconExtend: '',
         Donate: {
