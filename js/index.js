@@ -256,8 +256,8 @@
             about: '简单地活着, 肆意又精彩.'
         },
         Theme: {
-            url: 'https://github.com/GWhim/Hexo-LiveForCode',
-            name: 'Hexo - Live For Freedom'
+            url: 'https://github.com/GWhim/blog',
+            name: 'G·Whim'
         }
     };
 
