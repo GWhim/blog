@@ -253,7 +253,7 @@
             UbuntuMono: '/font/UbuntuMono.css'
         },
         Suffix: {
-            about: '简单地活着, 肆意又精彩.'
+            about: '请永远保持创想'
         },
         Theme: {
             url: 'https://github.com/GWhim/blog',
