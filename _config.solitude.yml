@@ -23,7 +23,7 @@ site:
     class: text
     # 具体内容 例如：solitude st-logo / Efu / /img/logo.png
     # Specific content, for example: solitude st-logo / Efu / /img/logo.png
-    custom: Solitude
+    custom: G·Whim
   # 网页icon
   # Web icon
   siteIcon: /img/pwa/favicon.ico
@@ -43,21 +43,22 @@ nav:
   # 中心菜单
   # center menu
   menu:
-    首页: / # 显示名称：路径 / Display name: path
+    # 首页: / # 显示名称：路径 / Display name: path
     文库: # 显示名称 / Display name
       文章列表: /archives/ || st-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
       全部分类: /categories/ || st-checkbox-multiple-blank-fill
       全部标签: /tags/ || st-price-tag-fill
-    友链:
-      友链鱼塘: /moments/ || st-wifi-fill
-      友情链接: /links/ || st-group-fill
-      宝藏博主: javascript:travelling() || st-gift-fill
-    我的:
-      装备: /equipment/ || st-laptop-line
-      工具箱: /tlink/ || st-tools-fill
-      音乐馆: /music/ || st-disc-fill
-    关于:
-      关于本站: /about/ || st-contacts-fill
+    # 友情链接: /links/ || st-group-fill
+    友链: /links/ || st-group-fill
+      # 友链鱼塘: /moments/ || st-wifi-fill
+      # 友情链接: /links/ || st-group-fill
+      # 宝藏博主: javascript:travelling() || st-gift-fill
+    音乐馆: /music/
+      # 装备: /equipment/ || st-laptop-line
+      # 工具箱: /tlink/ || st-tools-fill
+      # 音乐馆: /music/ || st-disc-fill
+    关于: /about/
+      # 关于本站: /about/ || st-contacts-fill
 
   # 右侧按钮
   # Button on the right
@@ -74,6 +75,10 @@ nav:
       icon: st-train-line # 图标 / Icon
       onclick: # 点击事件 / Click event
       id: travellings_button # id
+    # - name: Post Chat
+    #   onclick: javascript:togglePostChatContainer(); return false;
+    #   icon: st-robot-fill
+    #   id: post_chat_button
 
 # 首页顶部样式
 # Home top style
@@ -148,75 +153,37 @@ carousel: false
 # Aside Settings
 # 侧边栏配置
 aside:
-  # 值：about（关于我）、newestPost（最新文章）、allInfo（网站信息）、flip（公众号二维码）、newest_comment（最新评论）
-  # Values: about (info card), newestPost (latest article), allInfo (website information), flip (official account QR code), newest_comment (latest comment)
-
-  # 在主页显示的侧边栏信息
-  # Sidebar information displayed on the homepage
   home:
-    # 固定的信息（滑动不跟随）
-    # Fixed information (not followed by sliding)
     noSticky: "about"
-    # 不固定的信息（滑动跟随）
-    # Unfixed information (sliding follow)
     Sticky: "allInfo"
-  # 在文章页显示的侧边栏信息
-  # Sidebar information displayed on the article page
   post:
     noSticky: "about"
     Sticky: "newestPost"
-  # 在页面中显示的侧边栏信息
-  # Sidebar information displayed on the
   page:
     noSticky: "about"
     Sticky: "newestPost,allInfo"
-  position: 1 # left(0): 左侧 / right(1): 右侧
-  # 侧边栏个人信息卡片
-  # Sidebar personal information
+  position: 1
   card:
-    style: 1 # 0: Heo样式 ：1: 设计样式
-    # 头像信息
-    # Avatar information
+    style: 1
     author:
-      # 头像
-      # Avatar
-      img: /img/avatar.avif
-      # 表情图片链接
-      # Emoticon image link
-      # tip: 26x26 size
-      # sticker: https://7.isyangs.cn/34/65f2e4e0423cc-34.png # 不填不显示
-    # 点击作者头像跳转链接
-    # Click the author's avatar to jump link
+      img: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color
+      sticker:
     url: /about/
-    # 背景图片
-    # Background image
-    background: # https://s3.qjqq.cn/47/663af296b85f4.webp!color # 不设置不会展示（仅样式为1、2时有效）
-    # 文案1
-    # label1
-    content: 分享自己对编程的<b>热爱</b>，对美好生活的<b>向往</b>，对知识海洋<b>探索历程</b>。 # 样式为1时无效
-    # 文案2
-    # label2
-    content2: 相信你可以在这里找到对你有用的知识和教程。 # 样式为1时无效
-    # 个人信息卡片底部的小图标，按照例子填写
-    # Small icons at the bottom of the personal information card, fill in according to the example
-    # 个人信息卡片顶部按钮的打招呼语句
-    # Greeting statement of the button at the top of the personal information card
+    content: 分享新知识，记录生活点滴。
+    content2: 本站由 Hexo 强力驱动，主题为 Solitude。
     sayhello: # 样式为2时无效
       morning: ✨ 早上好啊，新的一天开始了
       noon: 中午应该休息一下咯
       afternoon: 下午茶时间到了 🍵
       night: 早睡早起身体好
       goodnight: 晚安，好梦 😴
-    # 个人信息卡片顶部按钮的切换文字
-    # Switching text of the button at the top of the personal information card
     sayhello2: # 样式为2时无效
-      - who i am
-      - where i am 
-      - g whim
-    # 个人信息卡片底部的小图标，按照例子填写
+      - 你会成功的
+      - 你一定会成功的
+      - 祝你好运，陌生人
     information: # 样式为1时请不要超过4个
-    Github: https://github.com/Gwhim || st-github-line # 名称：链接 || 图标 / Name: link || icon
-    Bilibili: https://space.bilibili.com/439658326 || st-bilibili-line
+      Github: https://github.com/GWhim || st-github-line
+      Bilibili: https://space.bilibili.com/439658326 || st-bilibili-line
 
   # 二维码
   # Official account QR code
@@ -250,7 +217,7 @@ aside:
     page: false
     # 开启后不悬停目录有模糊效果
     # After opening, there is a fuzzy effect without hovering over the directory
-    vague: true
+    vague: false
 
   # 侧边栏文章列表
   # Sidebar article list
@@ -281,7 +248,7 @@ aside:
     postcount: true
     # 总字数
     # The number of words on the web site
-    wordcount: false
+    wordcount: true
     # 访问量
     # PV
     pv: true
@@ -296,7 +263,7 @@ aside:
     runtimeenable: true
     # 格式：yyyy-MM-dd hh-mm-ss
     # Format: yyyy-MM-dd hh-mm-ss
-    runtime: "2023-04-20 00:00:00"
+    runtime: "2024-06-16 00:00:00"
 
 # 首页文章配置信息
 # Configure information on the home page
@@ -330,7 +297,7 @@ post:
     # -  # 默认图片 / default cover
     # 文章发布默认地址
     # default post locate
-    locate: 衡阳
+    locate: 大连
     # 文章默认版权
     # default post copyright
     copyright:
@@ -343,12 +310,12 @@ post:
   # 顶部文章简介
   # Top article introduction
   meta:
-    date: false # 发布日期 / Release date
-    updated: false # 更新日期 / Update date
+    date: true # 发布日期 / Release date
+    updated: true # 更新日期 / Update date
     locate: false # 位置 / Location
-    wordcount: false # 字数 / Number of words
-    readtime: false # 访问 / uv
-    pv: false # 浏览量 / pv
+    wordcount: true # 字数 / Number of words
+    readtime: true # 访问 / uv
+    pv: true # 浏览量 / pv
     comment: false # 评论数 / Comment count
   # 打赏
   # reward
