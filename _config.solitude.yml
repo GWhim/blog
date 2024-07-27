@@ -49,7 +49,7 @@ nav:
       全部分类: /categories/ || st-checkbox-multiple-blank-fill
       全部标签: /tags/ || st-price-tag-fill
     # 友情链接: /links/ || st-group-fill
-    友链: /links/ || st-group-fill
+    # 友链: /links/ || st-group-fill
       # 友链鱼塘: /moments/ || st-wifi-fill
       # 友情链接: /links/ || st-group-fill
       # 宝藏博主: javascript:travelling() || st-gift-fill
@@ -171,13 +171,15 @@ aside:
     url: /about/
     content: 分享新知识，记录生活点滴。
     content2: 本站由 Hexo 强力驱动，主题为 Solitude。
-    sayhello: # 样式为2时无效
+    # 样式为2时无效
+    sayhello:
       morning: ✨ 早上好啊，新的一天开始了
       noon: 中午应该休息一下咯
       afternoon: 下午茶时间到了 🍵
       night: 早睡早起身体好
       goodnight: 晚安，好梦 😴
-    sayhello2: # 样式为2时无效
+    # 样式为2时无效
+    sayhello2:
       - 你会成功的
       - 你一定会成功的
       - 祝你好运，陌生人
@@ -519,7 +521,7 @@ meting_api: "https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth
 # 音乐馆页
 # music page
 music:
-  enable: false
+  enable: true
   # 音乐ID：歌单ID / 专辑ID / 歌手ID
   # Music ID: playlist ID / album ID / singer ID
   id: 1994908354
@@ -539,7 +541,7 @@ music:
 # 音乐胶囊
 # capsule music
 capsule:
-  enable: false
+  enable: true
   # 歌单id / playlist id
   id: 8407304077
   # 播放列表的服务商。netease：网易云 / tencent：腾讯 / kugou：酷狗 / xiami：小米 / baidu：百度
@@ -652,7 +654,7 @@ OpenGraph:
 # word count
 # warning：开启前需要安装字数统计插件
 # warning: You need to install the word count plugin before turning it on
-wordcount: false
+wordcount: true
 
 # 访问统计
 # access statistics
@@ -662,15 +664,14 @@ busuanzi_use: 0 # 0: 原版 / 1: 青秸(other: 其它自定義的busuanzi平台)
 # 搜索
 # search
 # warning：开启前需要安装搜索插件
-# warning: You need to install the search plugin before turning it on
 search:
-  enable: false
+  enable: true
   # algolia, local
   type: local
   # 推荐标签
   # Recommended tags
   tags:
-  #  - Solitude
+   - 随笔
   #  - Hexo
   algolia:
   # hits:
@@ -865,7 +866,7 @@ google_adsense:
 
 # 自定义右键菜单 (Custom Right Menu)
 right_menu:
-  enable: false
+  enable: true
   commentBarrage: false # 是否显示热评开关 / Whether to display the hot comment switch.
   # 翻译功能（仅支持简繁）
   # Translation function (Simplified and Traditional Chinese only)
@@ -876,21 +877,21 @@ right_menu:
   # 自定义菜单项列表
   # Customize the list of menu items.
   custom_list:
-  #  - name: 随机短文
-  #    click: toRandomPost()
-  #    id: menu-randomPost
-  #    class:
-  #    icon: st-signal-tower-fill
-  #  - name: 全部分类
-  #    click: pjax.loadUrl('/categories/') # 外链用 window.open，pjax 无法请求跨域内容
-  #    id:
-  #    class:
-  #    icon: st-checkbox-multiple-blank-fill
-  #  - name: 全部标签
-  #    click: pjax.loadUrl('/tags/')
-  #    id:
-  #    class:
-  #    icon: st-price-tag-fill
+   - name: 随机短文
+     click: toRandomPost()
+     id: menu-randomPost
+     class:
+     icon: st-signal-tower-fill
+   - name: 全部分类
+     click: pjax.loadUrl('/categories/') # 外链用 window.open，pjax 无法请求跨域内容
+     id:
+     class:
+     icon: st-checkbox-multiple-blank-fill
+   - name: 全部标签
+     click: pjax.loadUrl('/tags/')
+     id:
+     class:
+     icon: st-price-tag-fill
   #  - name: 赞助主题
   #    click: window.open('https://afdian.net/a/efu0u0/', '_blank')
   #    id:
@@ -900,7 +901,7 @@ right_menu:
 # 哀悼模式，网页黑白
 # Mourning mode, web page black and white
 memorial:
-  enable: false
+  enable: true
   # 日期, (M-D)
   # Date, (M-D)
   # eg: 7-7, 9-18, 12-13 ...
@@ -912,21 +913,21 @@ memorial:
 # 诱骗
 # lure
 lure:
-  enable: false
+  enable: true
   # 跳出
   # Jump out
-  jump: "404 Not Found"
+  jump: "WHerever I aM"
   # 切回
   # Switch back
-  back: "ヾ(≧∇≦*)ゝ嘿嘿，上当了吧"
+  back: "forever whim"
 
 # 文章过期提醒
 # Article expiration reminder
 expire:
-  enable: false
+  enable: true
   # 过期时间
   # Expiration time
-  time: 30
+  time: 90
   position: top # top / bottom
   # 过期提示
   # Expiration prompt
