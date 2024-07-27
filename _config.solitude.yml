@@ -259,7 +259,7 @@ aside:
     uv: true
     # 最后更新日期
     # Last update date
-    updatetime: true
+    updatetime: false
     # 建站时间
     # Website creation time
     runtimeenable: true
@@ -361,7 +361,7 @@ post:
   # footer
   footer:
     enable: true
-    desc: 来自 Efu 的文章 # 介绍文字
+    desc: 来自 GWhim 的文章 # 介绍文字
     button: # 跳转按钮
       enable: true
       name: 了解更多
