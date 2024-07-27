@@ -588,7 +588,7 @@ copy:
 # 懒加载
 # lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # post, site
   # 加载中显示图片
   # Loading display image
@@ -602,7 +602,7 @@ lazyload:
 loading:
   # 全局加载动画
   # Global loading animation
-  fullpage: false
+  fullpage: true
   # 顶部加载胶囊
   # Top loading capsule
   pace: true
