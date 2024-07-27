@@ -1,0 +1,8 @@
+- name: digit-clock
+  title:
+  class: card-digit-clock
+  id: card-digit-clock
+  icon:
+  content_class:
+  content_id: 
+  content_html: "<script defer async pjax src='/js/custom/digit-clock.js'></script>"
