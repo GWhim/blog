@@ -9,17 +9,22 @@ site:
 
 nav:
   menu:
-    Article: # 显示名称 / Display name
-      Archive: /archives/ || fas fa-folder-closed # 子菜单名称：路径 || 图标 / Submenu name: path || icon
-      Categories: /categories/ || fas fa-clone
-      Tags: /tags/ || fas fa-tags
-    Friends:
-      Links: /links/ || fas fa-user-group
-      Treasure: javascript:travelling() || fas fa-gift
-    About: /about/
-
-  right:
-    random: true # 随机文章跳转 / random post button
+    # Home: / # name: link
+    # Article: # name
+    #   Archives: /archives/ || fas fa-folder-closed # item name: link || icon
+    #   Categories: /categories/ || fas fa-clone
+    #   Tags: /tags/ || fas fa-tags
+    # Friends:
+    #   Moments: /moments/ || fas fa-wifi
+    #   Links: /links/ || fas fa-user-group
+    #   Treasure: javascript:travelling() || fas fa-gift
+    # Myself:
+    #   Equipment: /equipment/ || fas fa-laptop
+    #   Toobox: /tlink/ || fas fa-toolbox
+    #   Music: /music/ || fas fa-music
+    # About: /about/
+  right: # right button
+    random: false # Random article
     custom:
 
 hometop:
@@ -264,31 +269,39 @@ display_mode:
   type: auto
   universe: true
 
+# --------------------------- start ---------------------------
+# Footer
 footer:
   information:
-    author: false
+    author: false # enable site_icon in footer
     left:
-      # Github: https://github.com/everfu || fab fa-github
-      # Email: mailto:o@efu.me || fas fa-envelope
+      # Github: https://github.com/efuo || fab fa-github # Name: link || icon
+      # Mail: mailto:o@efu.me || fab fa-envelope
     right:
-      # Bilibili: https://space.bilibili.com/1329819902 ||  fab fa-bilibili
+      # Bilibili: https://space.bilibili.com/1329819902 || fab fa-bilibili
       # Douyin: https://v.douyin.com/iJsLc8jt/ || fab fa-tiktok
-
   group:
-    Project:
-      Document: https://solitude.js.org
-      Github: https://github.com/everfu/hexo-theme-solitude
-    Sponsor:
-      Patreon: https://www.patreon.com/everfu
-      Polar: https://polar.sh/everfu
-  randomlink: true
-  privacy: /privacy/
-  license: /license/
+    # Navgation:
+    #   Archives: /archives/
+    #   Categories: /categories/
+    #   Tags: /tags/
+    # Server:
+    #   Aliyun: https://aliyun.com/
+    #   51la: https://v6.51.la/
+    # Arrangement:
+    #   Cookies: /cookies/
+    #   Privacy: /privacy/
+    #   Copyright: /copyright/
+
+  randomlink: false # Random link
+  privacy: # /privacy/ # Privacy policy
+  license: # https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh # License
   links:
     - name: Theme
       url: https://github.com/everfu/hexo-theme-solitude
-    - name: RSS
-      url: /atom.xml
+    # - name: RSS
+    #   url: /atom.xml
+# --------------------------- end ---------------------------
 
 errorpage:
   img: /img/404.avif

@@ -48,10 +48,10 @@ nav:
       文章列表: /archives/ || fas fa-folder-closed # 子菜单名称：路径 || 图标 / Submenu name: path || icon
       全部分类: /categories/ || fas fa-clone
       全部标签: /tags/ || fas fa-tags
-    #  友链:
-    #    友链鱼塘: /moments/ || fas fa-wifi
-    #    友情链接: /links/ || fas fa-user-group
-    #    宝藏博主: javascript:travelling() || fas fa-gift
+    友链: /links/
+      #  友链鱼塘: /moments/ || fas fa-wifi
+      #  友情链接: /links/ || fas fa-user-group
+      #  宝藏博主: javascript:travelling() || fas fa-gift
     #  我的:
     #    装备: /equipment/ || fas fa-laptop
     #    工具箱: /tlink/ || fas fa-toolbox
