@@ -10,14 +10,14 @@ links:
          descr: 快速、简洁且高效的博客框架 # 友链简介
          avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
          topimg: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 如果是card模式下，将显示
-         tag: 博主
+         tag: HEXO
          color: vip
        - name: solitude # 友链名称
          link: https://solitude.js.org/zh/ # 友链地址
          descr: 一款简洁的 Hexo 主题 # 友链简介
          avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
          topimg: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 如果是card模式下，将显示
-         tag: 博主
+         tag: HEXO
          color: vip
    - class_name: 技术
      descr: 技术知识为主的博客
@@ -26,14 +26,14 @@ links:
      link_list:
        - name: worstone # 友链名称
          link: https://notes.worstone.cn/ # 友链地址
-         descr: Hexo主题LiveForCode作者. # 友链简介
+         descr: Hexo主题LiveForCode作者 # 友链简介
          avatar: https://notes.worstone.cn/image/sidebar/avatar.jpg # 显示头像
          topimg: https://notes.worstone.cn/image/sidebar/avatar.jpg # 如果是card模式下，将显示
          tag: 博主
          color: vip
        - name: Ever Fu # 友链名称
          link: https://www.efu.me/ # 友链地址
-         descr: Hexo主题Solitude作者. # 友链简介
+         descr: Hexo主题Solitude作者 # 友链简介
          avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
          topimg: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 如果是card模式下，将显示
          tag: 博主

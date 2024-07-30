@@ -113,8 +113,39 @@ abbrlink:
   auto_date: false #enable auto date, it can auto fill the date by time today
   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
 
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  rel: false
+  tags: true
+  categories: true
+
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'exclude1.com'
+    - 'exclude2.com'
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
 deploy:
   type: ''
