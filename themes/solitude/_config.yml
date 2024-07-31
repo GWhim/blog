@@ -378,7 +378,7 @@ music:
   mutex: true
 # Capsule music
 capsule:
-  enable: false
+  enable: true
   id: 8407304077
   server: netease
   type: playlist

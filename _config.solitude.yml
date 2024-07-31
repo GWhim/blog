@@ -34,6 +34,7 @@ nav:
     我的:
       友链: /links/ || fas fa-user-group
       音乐馆: /music/ || fas fa-music
+      闲言碎语: /essay/ || fas fa-comment-dots
       #  友链鱼塘: /moments/ || fas fa-wifi
       #  友情链接: /links/ || fas fa-user-group
       #  宝藏博主: javascript:travelling() || fas fa-gift
@@ -84,21 +85,30 @@ hometop:
     # Carousel icon
     # tip: 76x76 size
     icon:
-      HTML: # 名字 / Name
-        img: https://7.isyangs.cn/34/65f2e42921677-34.png # 图片 / Image
-        color: "#e9572b" # 背景色 / Background color
-      JS:
-        img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
-        color: "#f7cb4f"
+      JAVA: # 名字 / Name
+        img: https://bu.dusays.com/2023/04/09/643293b1184e9.jpg # 图片 / Image
+        color: "#ffffff" # 背景色 / Background color
+      Node:
+        img: https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg
+        color: "#333"
+      Redis:
+        img: https://jsd.onmicrosoft.cn/gh/Ser-MingShao/HexoPublicStaiciImg/serms/20230531233132.png
+        color: "#ffffff"
+      Vue:
+        img: https://bu.dusays.com/2023/04/09/643293b6788bd.png
+        color: "#b8f0ae"
       Docker:
         img: https://7.isyangs.cn/34/65f2e45462045-34.png
         color: "#57b6e6"
-      Flutter:
-        img: https://7.isyangs.cn/34/65f2e47acbe98-34.png
-        color: "#ffffff"
-      WebPack:
-        img: https://7.isyangs.cn/34/65f2e488bf8ed-34.png
-        color: "#2e3a41"
+      Idea:
+        img: https://jsd.onmicrosoft.cn/gh/Ser-MingShao/HexoPublicStaiciImg/sermsu%3D352874801%2C1482674265%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DPNG.png
+        color: "#1777ff"
+      JS:
+        img: https://7.isyangs.cn/34/65f2e43ceddda-34.png
+        color: "#f7cb4f"
+      HTML:
+        img: https://bu.dusays.com/2022/12/15/639aa3a5c241c.png
+        color: "#e9572b"
       Git:
         img: https://7.isyangs.cn/34/65f2e499066fa-34.png
         color: "#df5b40"
@@ -153,7 +163,7 @@ aside:
     style: 1
     author:
       img: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color
-      sticker:
+      sticker: https://goss.gwhim.cn/feeling.gif
     url: /about/
     content: 分享新知识，记录生活点滴。
     content2: 本站由 Hexo 强力驱动，主题为 Solitude。
@@ -242,7 +252,7 @@ aside:
     pv: true
     # 访客数
     # UV
-    uv: true
+    uv: false
     # 最后更新日期
     # Last update date
     updatetime: false
@@ -445,10 +455,13 @@ footer:
   links:
     # 为了主题能够得到更多的支持，建议保留主题链接
     # In order for the theme to get more support, it is recommended to keep the theme link
+    - name: 订阅
+      url: /atom.xml
     - name: 主题
       url: https://github.com/everfu/hexo-theme-solitude
-    # - name: 订阅
-    #   url: /atom.xml
+    - name: 辽ICP备2024029081号
+      url: https://beian.miit.gov.cn/
+
 
 # 404 页面(404 page)
 errorpage:
@@ -467,7 +480,7 @@ errorpage:
 # 前置要求：需配置即刻短文页面
 # Pre-requirements: talk now page needs to be configured
 says:
-  enable: false
+  enable: true
   # 主页的即刻轮播条
   # Talk carousel bar on the homepage
   home_mini: false
@@ -650,7 +663,7 @@ wordcount: true
 # 访问统计
 # access statistics
 busuanzi: true
-busuanzi_use: 0 # 0: 原版 / 1: 青秸(other: 其它自定義的busuanzi平台)
+busuanzi_use: 1 # 0: 原版 / 1: 青秸(other: 其它自定義的busuanzi平台)
 
 # 搜索
 # search
@@ -821,14 +834,16 @@ font:
 # Insert additional code such as: statistics, advertising, etc.
 extends:
   head: # 在head中插入 / Insert in head
+    - <link rel="stylesheet" href="/css/custom.css">
   # - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
+    - <script src="/js/custom.js"></script>
 
 # PWA
 # https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps
 # docs: https://solitude.js.org/config/extra#pwa
 pwa:
-  enable: true
+  enable: false
   manifest: /manifest.json # manifest.json 文件路径
   theme_color: "#006a73" # 主题颜色
   mask_icon: /img/pwa/favicon.ico # 遮罩图标

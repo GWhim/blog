@@ -26,19 +26,19 @@ links:
      link_list:
        - name: worstone # 友链名称
          link: https://notes.worstone.cn/ # 友链地址
-         descr: Hexo主题LiveForCode作者 # 友链简介
          avatar: https://notes.worstone.cn/image/sidebar/avatar.jpg # 显示头像
-         topimg: https://notes.worstone.cn/image/sidebar/avatar.jpg # 如果是card模式下，将显示
-         tag: 博主
-         color: vip
+         descr: Hexo主题LiveForCode作者 # 友链简介
+        #  tag: 博主
        - name: Ever Fu # 友链名称
          link: https://www.efu.me/ # 友链地址
-         descr: Hexo主题Solitude作者 # 友链简介
          avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
-         topimg: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 如果是card模式下，将显示
-         tag: 博主
-         color: vip
+         descr: Hexo主题Solitude作者 # 友链简介
        - name: isYangs # 友链名称
          link: https://isyangs.cn # 友链地址
          avatar: https://7.isyangs.cn/8/655c9835780a0-8.jpg # 显示头像
          descr: 一个前端Bug构造师的博客 # 友链简介
+       - name: btwoa # 友链名称
+         link: https://blog.btwoa.com/ # 友链地址
+         avatar: https://assets.btwoa.com/gif/avatar.gif # 显示头像
+         descr: 大北一个无所事事的半吊子博主 # 友链简介
+         
