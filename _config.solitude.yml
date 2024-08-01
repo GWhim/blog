@@ -794,7 +794,7 @@ giscus:
 
 # 中控台
 console:
-  enable: false # 开启后显示中控台
+  enable: true # 开启后显示中控台
   recentComment: # 开启后显示最近评论
     enable: false # 开启前请先配置评论
     storage: .2 # 缓存时间
