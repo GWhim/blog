@@ -162,7 +162,7 @@ aside:
   card:
     style: 1
     author:
-      img: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color
+      img: https://goss.gwhim.cn/gwhim.jpg
       sticker: https://goss.gwhim.cn/feeling.gif
     url: /about/
     content: 分享新知识，记录生活点滴。
@@ -445,7 +445,7 @@ footer:
   # Random links at footer
   # warning: 打开前必须先配置links
   # warning: links must be configured before opening
-  randomlink: true
+  randomlink: false
   # 隐私助手右侧弹窗，填写路径后开启
   # Privacy assistant right pop-up window, fill in the path to open
   privacy: /privacy/
@@ -923,10 +923,10 @@ lure:
   enable: true
   # 跳出
   # Jump out
-  jump: "G·Whim"
+  jump: "(◍´꒳`◍) Hi, G·Whim"
   # 切回
   # Switch back
-  back: "forever whim"
+  back: "(*´∇｀*) 欢迎回来 !"
 
 # 文章过期提醒
 # Article expiration reminder
@@ -944,7 +944,7 @@ expire:
 # 背景图片
 # Background image
 background:
-  enable: false
+  enable: true
   opacity: .2
   dark: https://bu.dusays.com/2023/09/29/651685ce667d1.jpg
   light: https://bu.dusays.com/2023/09/29/651685cc18d39.jpg

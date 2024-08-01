@@ -9,7 +9,7 @@ authorinfo:
     - '脚踏实地行动派 🏃'
     - '团队小组发动机 🧱'
     - '硬核狠人话不多 💢'
-  image: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color
+  image: https://goss.gwhim.cn/gwhim.jpg
 
 contentinfo: 
   sup: 你好，欢迎来到gwhim的个人博客站👋
@@ -21,6 +21,7 @@ contentinfo:
     - 产品
     - 设计
     - 程序
+    - 未来
 
 motto:
   title: 座右铭
@@ -28,7 +29,7 @@ motto:
   content: 砥砺前行。
 expertise:
   title: 特长
-  prefix: 自动化测试、前端开发
+  prefix: 后端开发
   specialist: 专家
   content: 学习能力
   level: MAX
@@ -53,20 +54,6 @@ award:
   description: 感谢赞赏的人，因为你们，让我感受到写博客这件事情能够给你们创造了价值。这会让我在这条路上走得更远。
   tips: 总金额：¥ {sum}，将全部用于博客的维护和更新。 # 必须带 {sum}，否则无法显示总金额
 rewardList: # 底部捐赠
-  - name: A
-    money: 5
-    time: 2023-04-20
-  - name: B
-    money: 6.66
-    time: 2023-08-11
-    vip: true
-  - name: C
-    money: 5
-    time: 2023-08-11
-  - name: D
-    money: 56
-    vip: true
-    time: 2023-08-25
-  - name: E
-    money: 3.33
-    time: 2023-12-24
+  - name: 广告位招商
+    money: 100
+    time: 2024-08-01
