@@ -113,6 +113,15 @@ window.addEventListener("load", () => {
                 } else {
                     clearSearchResults();
                 }
+            } else {
+                // 魔改-支持输入大于三个字符串时自动查询
+                query = this.value.trim();
+                if (query.length >= 3) {
+                    $results.innerHTML = '';
+                    results = search(query);
+                    renderResults(results, currentPage);
+                    renderPagination(results.length);
+                }
             }
         });
     }
@@ -129,7 +138,8 @@ window.addEventListener("load", () => {
 
     function search(query) {
         const regex = new RegExp(query.split('').join('.*'), 'i');
-        return store.filter(page => regex.test(page.title) || regex.test(page.content));
+        // 魔改-模糊搜索时不搜索文档内的标签
+        return store.filter(page => regex.test(page.title) || regex.test(page.content.replace(/<[^>]+>/g, '')));
     }
 
     function renderResults(results, page) {
