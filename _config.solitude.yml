@@ -323,34 +323,34 @@ post:
     title: 感谢您的赞赏。
     desc: 因为有你们的支持，我才体会到写文章的价值。
     list:
-      - name: Polar
-        qcode: https://i.postimg.cc/sx9zR8j0/https-polar-sh-everfu-M-x20.avif
-        url: https://polar.sh/everfu
+      - name: 支付宝
+        qcode: https://i.postimg.cc/rwSLdQjr/alipay.jpg
+        # url: https://polar.sh/everfu
         color: "#ff4d4f"
-      - name: Patreon
-        qcode: https://i.postimg.cc/3JY7ZK9M/https-www-patreon-com-everfu-M-x20.avif
-        url: https://www.patreon.com/everfu
+      - name: 微信
+        qcode: https://i.postimg.cc/Jndwwgr9/wechat.jpg
+        # url: https://www.patreon.com/everfu
         color: "#ffe58f"
   # 分享按钮，需要是什么哪些按钮，填写后开启
   share:
-    enable: true
+    enable: false
     list:
-      - qq
-      - weibo
-      - twitter
-      - facebook
-      - telegram
-      - whatsapp
-      - linkedin
-      - link
-      - qrcode
+      # - qq
+      # - weibo
+      # - twitter
+      # - facebook
+      # - telegram
+      # - whatsapp
+      # - linkedin
+      # - link
+      # - qrcode
   # 版权中订阅按钮跳转链接，填写地址后开启
   # Subscription button jump link in copyright
   rss: /atom.xml
   # 文章主题色获取
   # Article theme color acquisition
   covercolor:
-    enable: true
+    enable: false
     mode: api # local：本地取色 / api：img2color取色 : local: local color / api: img2color color
     api: https://img2color-efu.vercel.app/api?img= # api地址 / api address
     time: 43200000 # api取色间隔（毫秒），默认为12小时 / api color interval (milliseconds), default is 12 hours
@@ -428,8 +428,8 @@ footer:
     #   51la统计: https://v6.51.la/
     #   百度统计: https://tongji.baidu.com/
     服务:
-      阿里云: https://aliyun.com/
-      多吉云: https://www.dogecloud.com/
+      阿里云: https://aliyun.com/ ||   fas fa-fire  || linear-gradient(to right,#f65,#ffbf37)
+      多吉云: https://www.dogecloud.com/ ||   fas fa-fire  || linear-gradient(to right,#f65,#ffbf37)
     
     # 打赏记录: /about/
   # randomlink: true
@@ -497,7 +497,7 @@ says:
 # 前置要求：需配置最近评论页面和评论，否则显示为空
 # Pre-requirements: recent comments page needs to be configured and commented, otherwise it will be displayed as empty
 recent_comments:
-  enable: false
+  enable: true
   # 评论数
   # Number of comments
   limit: 50 # ⚠️waline 仅支持最大50条评论 / ⚠️waline only supports a maximum of 50 comments
@@ -738,23 +738,27 @@ katex:
 # comment
 # getting start: https://solitude.js.org/comments/comment
 comment:
-  use: # waline, twikoo, valine, artalk, giscus
-  commentBarrage: false # 热评开关 / Hot comment switch
-  lazyload: false # 懒加载
+  use: twikoo # waline, twikoo, valine, artalk, giscus
+  commentBarrage: true # 热评开关 / Hot comment switch
+  lazyload: true # 懒加载
   count: false # 评论数展示
   pv: false # 是否使用評論統計頁面訪問
   avatar: https://cravatar.cn # Gravatar link
+  newest_comment: # 最新评论
+    enable: true
+    storage: .2 # 缓存时间
   hot_tip: # 多人互动
-    enable: false # 开启后将在文章列表显示多人互动
+    enable: true # 开启后将在文章列表显示多人互动
     count: 3 # 设置大于多少评论时显示
 
 # twikoo 配置信息
 # twikoo settings
 twikoo: # https://twikoo.js.org/
-  envId: # url: https://twikoo.sondy.top/
+  envId: https://gwhim.netlify.app/.netlify/functions/twikoo # url: https://twikoo.sondy.top/
+  lang: zh-CN # 语言
   region: # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
   style: true # Use custom styles when turned on / 开启后使用自定义样式
-  accessToken: # AccessToken
+  accessToken: ab2a33789ce94a5ba30ccd7d46383891 # AccessToken
   option: # twikoo option
 
 # waline 配置信息
@@ -767,10 +771,10 @@ waline: # https://waline.js.org/
 # valine 配置信息
 # valine settings
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
-  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  avatar: # https://valine.js.org/avatar.html
+  appId: 0pxqiXNQVKJxm6wmm90dclgu-gzGzoHsz # leancloud application app id
+  appKey: XgjODMKWMnOpOVFOr53tq9fm # leancloud application app key
+  serverURLs: https://0pxqixnq.lc-cn-n1-shared.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  avatar: monsterid
   visitor: false
   style: true # Use custom styles when turned on / 开启后使用自定义样式
   option: # options list
@@ -797,7 +801,7 @@ giscus:
 console:
   enable: true # 开启后显示中控台
   recentComment: # 开启后显示最近评论
-    enable: false # 开启前请先配置评论
+    enable: true # 开启前请先配置评论
     storage: .2 # 缓存时间
   card:
     tags: true # 开启后显示 标签
@@ -874,7 +878,7 @@ google_adsense:
 # 自定义右键菜单 (Custom Right Menu)
 right_menu:
   enable: true
-  commentBarrage: false # 是否显示热评开关 / Whether to display the hot comment switch.
+  commentBarrage: true # 是否显示热评开关 / Whether to display the hot comment switch.
   # 翻译功能（仅支持简繁）
   # Translation function (Simplified and Traditional Chinese only)
   translate:

@@ -1,44 +1,72 @@
 banner_suffix: 
 links:
-   - class_name: 特别鸣谢 # 分类名称
-     descr: 建站历程中提供设计灵感、搭建教程的优秀博主 # 分类简介
+   - class_name: 框架与主题 # 分类名称
+    #  descr: 建站历程中提供设计灵感、搭建教程的优秀博主 # 分类简介
      type: card  # 显示方式，有两种 card / item
      suffix: 
      link_list:
        - name: hexo # 友链名称
          link: https://hexo.io/zh-cn/ # 友链地址
          descr: 快速、简洁且高效的博客框架 # 友链简介
-         avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
-         topimg: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 如果是card模式下，将显示
-         tag: HEXO
-         color: vip
+         avatar: https://hexo.io/icon/favicon-32x32.png # 显示头像
+         topimg: https://pic1.zhimg.com/70/v2-41e1b825c51055f39c22b95777bc620b_1440w.image?source=172ae18b&biz_tag=Post # 如果是card模式下，将显示
+        #  tag: HEXO
+        #  color: vip
        - name: solitude # 友链名称
          link: https://solitude.js.org/zh/ # 友链地址
          descr: 一款简洁的 Hexo 主题 # 友链简介
-         avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
-         topimg: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 如果是card模式下，将显示
-         tag: HEXO
-         color: vip
+         avatar: https://s3.qjqq.cn/47/66399928e7379.webp!color # 显示头像
+         topimg: https://solitude.js.org/screenshot.avif # 如果是card模式下，将显示
+        #  tag: HEXO
+        #  color: vip
    - class_name: 技术
      descr: 技术知识为主的博客
      type: item
      suffix: 
      link_list:
-       - name: worstone # 友链名称
-         link: https://notes.worstone.cn/ # 友链地址
-         avatar: https://notes.worstone.cn/image/sidebar/avatar.jpg # 显示头像
-         descr: Hexo主题LiveForCode作者 # 友链简介
         #  tag: 博主
        - name: Ever Fu # 友链名称
          link: https://www.efu.me/ # 友链地址
          avatar: https://s3.qjqq.cn/47/6625c1a86d7fd.webp!color # 显示头像
          descr: Hexo主题Solitude作者 # 友链简介
-       - name: isYangs # 友链名称
-         link: https://isyangs.cn # 友链地址
-         avatar: https://7.isyangs.cn/8/655c9835780a0-8.jpg # 显示头像
-         descr: 一个前端Bug构造师的博客 # 友链简介
+       - name: 清羽飞扬 # 友链名称
+         link: https://blog.qyliu.top/ # 友链地址
+         avatar: https://blog.qyliu.top/info/avatar.ico # 显示头像
+         descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜 # 友链简介
        - name: btwoa # 友链名称
          link: https://blog.btwoa.com/ # 友链地址
          avatar: https://assets.btwoa.com/gif/avatar.gif # 显示头像
          descr: 大北一个无所事事的半吊子博主 # 友链简介
+       - name: 新·都在 # 友链名称
+         link: https://blog.xindu.site/ # 友链地址
+         avatar: https://redirect.cnkj.site:19096/blog.cnkj.site/backup/logo-doiw.png # 显示头像
+         descr: Carol # 友链简介
+       - name: ❖星港◎Star☆ # 友链名称
+         link: https://blog.starsharbor.com/ # 友链地址
+         avatar: https://bu.dusays.com/2023/09/27/6513053bebdb2.webp # 显示头像
+         descr: 以博客记录生活与热爱！ # 友链简介
+       - name: HiPeach # 友链名称
+         link: https://blog.opeach.cn/ # 友链地址
+         avatar: https://npm.elemecdn.com/opicture@1.0.0/main/avatar.webp # 显示头像
+         descr: 巧不可语，妙不可言💫 # 友链简介
+       - name: Minecraft-Sep # 友链名称
+         link: https://mc-sep.js.cool/ # 友链地址
+         avatar: 	https://cdn.luogu.com.cn/upload/usericon/942118.png # 显示头像
+         descr: 人生能有几回搏，天涯何处无芳草🌟 # 友链简介
+       - name: naokuo # 友链名称
+         link: https://www.naokuo.top/ # 友链地址
+         avatar: https://www.naokuo.top/img/author/author_512.webp # 显示头像
+         descr: 道之所存，师之所存✨ # 友链简介
+       - name: serms # 友链名称
+         link: https://blog.serms.top/ # 友链地址
+         avatar: https://bu.dusays.com/2023/10/11/65269ea6226c8.png # 显示头像
+         descr: 代码如诗，细节成就极致，逻辑成就完美。 # 友链简介
+       - name: KukaのBlog # 友链名称
+         link: https://www.xwsclub.top/ # 友链地址
+         avatar: 	https://pic.imgdb.cn/item/65bdaf56871b83018a17cd21.webp # 显示头像
+         descr: 莫听穿林打叶声，何妨吟啸且徐行 # 友链简介
+       - name: GarveyZhong # 友链名称
+         link: https://blog.imzjw.cn/ # 友链地址
+         avatar: 	https://npm.elemecdn.com/nanshen/avatar.jpg # 显示头像
+         descr: 我偶有灵光一现，便将其随手记录，以作未来回味。 # 友链简介
          
