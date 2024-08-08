@@ -69,4 +69,8 @@ links:
          link: https://blog.imzjw.cn/ # 友链地址
          avatar: 	https://npm.elemecdn.com/nanshen/avatar.jpg # 显示头像
          descr: 我偶有灵光一现，便将其随手记录，以作未来回味。 # 友链简介
+       - name: Anon # 友链名称
+         link: https://hexo.soyorin.fun/ # 友链地址
+         avatar: 	https://img1.baidu.com/it/u=809824599,2700939519&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500 # 显示头像
+         descr:  一个不咋写文章但是热心帮助他人的博主# 友链简介
          
