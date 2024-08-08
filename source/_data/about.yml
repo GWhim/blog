@@ -33,6 +33,9 @@ expertise:
   specialist: 专家
   content: 学习能力
   level: MAX
+# tj: # 统计
+#   url: https://v6-widget.51.la/v6/3JBHj5KtB423wvVm/quote.js # 需要到51la官网注册自行获取
+#   img: https://s3.qjqq.cn/47/661baa7669e8f.webp!color # 背景 
 
 #自定义
 cause:

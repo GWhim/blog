@@ -12,6 +12,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "@renbaoshuo/markdown-it-katex": "^2.0.2",
     "compress": "^0.99.0",
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -27,7 +28,7 @@
     "hexo-generator-searchdb": "^1.4.1",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
-    "hexo-renderer-marked": "^6.3.0",
+    "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",

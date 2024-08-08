@@ -9,7 +9,7 @@ site:
     custom: G·Whim
   # 网页icon
   # Web icon
-  siteIcon: /img/pwa/favicon.ico  
+  siteIcon: /img/pwa/favicon.ico
   # 页脚的Logo、加载动画默认的logo
   # Logo in the footer, default logo for loading animation
   icon: /img/pwa/favicon.ico
@@ -44,7 +44,7 @@ nav:
     #    音乐馆: /music/ || fas fa-music
     关于: /about/
       # 关于本站: /about/ || fas fa-user
-    
+
     # 关于: /about/
 
   # 右侧按钮
@@ -150,13 +150,13 @@ carousel: false
 # 侧边栏配置
 aside:
   home:
-    noSticky: "about,digit-clock"
+    noSticky: "about,digit-clock,history"
     Sticky: "allInfo"
   post:
-    noSticky: "about,digit-clock"
+    noSticky: "about,digit-clock,history"
     Sticky: "newestPost"
   page:
-    noSticky: "about,digit-clock"
+    noSticky: "about,digit-clock,history"
     Sticky: "newestPost,allInfo"
   position: 1
   card:
@@ -430,7 +430,7 @@ footer:
     服务:
       阿里云: https://aliyun.com/ ||   fas fa-fire  || linear-gradient(to right,#f65,#ffbf37)
       多吉云: https://www.dogecloud.com/ ||   fas fa-fire  || linear-gradient(to right,#f65,#ffbf37)
-    
+
     # 打赏记录: /about/
   # randomlink: true
   # privacy: /privacy/
@@ -491,6 +491,7 @@ says:
   # 即刻短文仅展示前n条
   # Talk short text only shows the first n
   strip: 30
+  link: # 你的 memos 部署地址，例如： https://example.com/api/v1/memo?creatorId=1&tag=says
 
 # 最近评论
 # recent comments
@@ -839,10 +840,12 @@ font:
 # Insert additional code such as: statistics, advertising, etc.
 extends:
   head: # 在head中插入 / Insert in head
-    - <link rel="stylesheet" href="/css/custom.css">
+      - <link rel="stylesheet" href="/css/custom.css">
   # - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
-    - <script src="/js/custom.js"></script>
+      - <script src="/js/custom.js"></script>
+      # - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+      # - <script>LA.init({id:"3JBHj5KtB423wvVm",ck:"3JBHj5KtB423wvVm"})</script>
 
 # PWA
 # https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps
