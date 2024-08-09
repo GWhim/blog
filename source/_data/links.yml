@@ -1,9 +1,9 @@
-banner_suffix: 
+banner_suffix:
 links:
    - class_name: 框架与主题 # 分类名称
     #  descr: 建站历程中提供设计灵感、搭建教程的优秀博主 # 分类简介
      type: card  # 显示方式，有两种 card / item
-     suffix: 
+     suffix:
      link_list:
        - name: hexo # 友链名称
          link: https://hexo.io/zh-cn/ # 友链地址
@@ -22,7 +22,7 @@ links:
    - class_name: 技术
      descr: 技术知识为主的博客
      type: item
-     suffix: 
+     suffix:
      link_list:
         #  tag: 博主
        - name: Ever Fu # 友链名称
@@ -72,5 +72,4 @@ links:
        - name: Anon # 友链名称
          link: https://hexo.soyorin.fun/ # 友链地址
          avatar: 	https://img1.baidu.com/it/u=809824599,2700939519&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500 # 显示头像
-         descr:  一个不咋写文章但是热心帮助他人的博主# 友链简介
-         
+         descr:  一个不咋写文章但是热心帮助他人的博主 # 友链简介

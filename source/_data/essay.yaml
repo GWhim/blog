@@ -1,13 +1,13 @@
 essay_list:
+  - content: 音乐播放测试！
+    date: 2024-08-09 09:21
+    aplayer:
+      server: netease
+      id: 571340283
   - content: 视频播放测试！
     date: 2024-08-01 08:00
     video:
       bilibili: BV1RC4y1577o
-  - content: 音乐播放测试！
-    date: 2024-07-31 15:32
-    aplayer:
-      server: netease
-      id: 571340283
   - content: 主题交流群已建立！
     date: 2024-07-31 15:32
     image:

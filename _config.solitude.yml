@@ -42,9 +42,9 @@ nav:
     #    装备: /equipment/ || fas fa-laptop
     #    工具箱: /tlink/ || fas fa-toolbox
     #    音乐馆: /music/ || fas fa-music
-    关于: /about/
-      # 关于本站: /about/ || fas fa-user
-
+    关于:  # /about/
+       关于本站: /about/ || fas fa-user
+       留言板: /message/ || fas fa-message
     # 关于: /about/
 
   # 右侧按钮
@@ -513,7 +513,7 @@ recent_comments:
 # 前置要求：需配置留言板页面
 # Pre-requirements: message board page needs to be configured
 envelope:
-  enable: false
+  enable: true
   line: 10 # 显示行数
   speed: 20 # 播放速度
   hover: true # 鼠标悬停暂停
@@ -631,10 +631,10 @@ highlight:
 # image lightbox
 # warning：开启前下方的fancybox或mediumZoom必须打开一个
 # warning: One of the fancybox or mediumZoom below must be turned on before turning on
-lightbox: false
+lightbox: true
 # fancybox
 # https://fancyapps.com/fancybox/
-fancybox: false
+fancybox: true
 # mediumZoom
 mediumZoom: false
 
@@ -844,8 +844,8 @@ extends:
   # - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
   body: # 在body中插入 / Insert in body
       - <script src="/js/custom.js"></script>
-      # - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-      # - <script>LA.init({id:"3JBHj5KtB423wvVm",ck:"3JBHj5KtB423wvVm"})</script>
+      - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+      - <script>LA.init({id:"3JBHj5KtB423wvVm",ck:"3JBHj5KtB423wvVm"})</script>
 
 # PWA
 # https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps
