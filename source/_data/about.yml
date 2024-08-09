@@ -11,7 +11,7 @@ authorinfo:
     - '硬核狠人话不多 💢'
   image: https://gcdn.gwhim.cn/tyc/2024/08/1ElR6V5vuv3.jpg
 
-contentinfo: 
+contentinfo:
   sup: 你好，欢迎来到gwhim的个人博客站👋
   name: 献给所有人，请永远保持创想！ # 名称
   title: forever keep whim # 介绍
@@ -33,9 +33,9 @@ expertise:
   specialist: 专家
   content: 学习能力
   level: MAX
-# tj: # 统计
-#   url: https://v6-widget.51.la/v6/3JBHj5KtB423wvVm/quote.js # 需要到51la官网注册自行获取
-#   img: https://s3.qjqq.cn/47/661baa7669e8f.webp!color # 背景 
+tj: # 统计
+  url: https://v6-widget.51.la/v6/3JBHj5KtB423wvVm/quote.js # 需要到51la官网注册自行获取
+  img: https://s3.qjqq.cn/47/661baa7669e8f.webp!color # 背景
 
 #自定义
 cause:
